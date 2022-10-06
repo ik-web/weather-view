@@ -1,0 +1,41 @@
+@import '../../../../styles/vars';
+@import '../../../../styles/mixins';
+
+.currentDayInfo {
+  position: relative;
+
+  height: 300px;
+  padding: 20px;
+  height: 100%;
+
+  @include bg-image-cloud('../../../../img/cloud.png');
+  @include component-bg;
+
+  @include tablet-large {
+    @include component-no-bg;
+  }
+
+  @include tablet {
+    padding: 20px 20px 20px 10px;
+  }
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+
+    &:first-child {
+
+      @include mobile {
+        border-top: 1px dashed $color-grey;
+        border-radius: 0;
+      }
+    }
+  }
+}

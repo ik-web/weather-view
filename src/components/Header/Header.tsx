@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import Select from 'react-select';
 import { HeaderIcons } from '../../img/icons/header/HeaderIcons';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [ theme, setTheme ] = useState('light');
   
   const toggleTheme = () => {

@@ -13,7 +13,7 @@
       "logo title . theme select"
     ;
 
-    @include tablet {
+    @include tablet-large {
       grid-template-columns: auto  1fr auto;
       grid-template-areas:
         "logo title theme"
@@ -37,7 +37,7 @@
     font-weight: 400;
     color: var(--color-default);
 
-    @include tablet {
+    @include tablet-large {
       padding: 0;
       text-align: center;
     }
@@ -55,7 +55,7 @@
     &:hover svg {
       animation: animation-theme-btn 5s infinite linear;
       
-      @include tablet {
+      @include tablet-large {
         animation: none;
       }
     }
@@ -76,7 +76,7 @@
 .header__select {
   grid-area: select;
 
-  @include tablet {
+  @include tablet-large {
     display: none;
   }
 }

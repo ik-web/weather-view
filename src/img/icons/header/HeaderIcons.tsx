@@ -1,6 +1,5 @@
 import React from 'react';
 import headerLogo from '../svg/header-logo.svg';
-import themeIcon from '../svg/theme.svg';
 import styles from './HeaderIcons.module.scss';
 
 interface Props {

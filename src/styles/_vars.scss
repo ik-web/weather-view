@@ -1,7 +1,7 @@
 $font-family-main: 'Open Sans', sans-serif;
 $font-family-decoration: 'Shrikhand', cursive;
 $font-family-signature: 'Pacifico', cursive;
-$font-size-main: 14px;
+$font-size-main: 16px;
 
 $color-main: #1a3558;
 $color-light: #fff;
@@ -21,6 +21,13 @@ $color-footer-bg-dark: linear-gradient($color-dark, #1d331d);
 
 $transition-duration-main: 0.1s;
 
+$border-radius-main: 12px;
+
+$shadow-light: 1px 1px 4px $color-main;
+$shadow-dark: 1px 1px 4px $color-black;
+
+$transition-duration-main: 0.1s;
+
 :root {
   // color -------------------------------------------------------
   --color-light: #{$color-main};
@@ -36,6 +43,36 @@ $transition-duration-main: 0.1s;
   --color-header-bg-light: #{$color-header-bg-light};
   --color-header-bg-dark: #{$color-header-bg-dark};
   --color-header-bg-default: var(--color-header-bg-light);
+
+  // Content background ------------------------------------------
+  --color-content-bg-light: #{$color-light-blue};
+  --color-content-bg-dark: #{$color-main};
+  --color-content-bg-default: var(--color-content-bg-light);
+
+  // Box-shadow ---------------------------------------------------
+  --shadow-light: #{$shadow-light};
+  --shadow-dark: #{$shadow-dark};
+  --shadow-default: var(--shadow-light);
+
+  // Other days filter's button background -----------------------
+  --color-btn-bg-light: #{$color-blue};
+  --color-btn-bg-dark: #{$color-dark};
+  --color-btn-bg-default: var(--color-btn-bg-light);
+
+  // Other days filter's button-active background ----------------
+  --color-btn-bg-active-light: #{$color-light};
+  --color-btn-bg-active-dark: #{$color-blue};
+  --color-btn-bg-active-default: var(--color-btn-bg-active-light);
+
+  // Other days filter's button-active text ----------------------
+  --color-btn-active-light: #{$color-main};
+  --color-btn-active-dark: #{$color-light};
+  --color-btn-active-default: var(--color-btn-active-light);
+
+  // Day card background -----------------------------------------
+  --color-day-bg-light: #{$color-light};
+  --color-day-bg-dark: #{$color-dark};
+  --color-day-bg-default: var(--color-card-bg-light);
   
   // Footer background -------------------------------------------
   --color-footer-bg-light: #{$color-footer-bg-light};

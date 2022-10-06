@@ -1,0 +1,44 @@
+@import '../../../../../styles/vars';
+@import '../../../../../styles/mixins';
+
+.infoItem {
+  display: grid;
+  grid-template-columns: auto 110px 1fr;
+  gap: 20px;
+  align-items: center;
+
+  margin: 10px 0;
+
+  @include tablet {
+    grid-template-columns: auto 90px 1fr;
+    gap: 15px;
+  }
+
+  @include tablet {
+    grid-template-columns: auto 80px 1fr;
+    gap: 10px;
+  }
+
+  @include mobile {
+    margin: 10px 0 0 0;
+  }
+  
+  &__title {
+    color: $color-grey;
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+  
+  &__value {
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+}

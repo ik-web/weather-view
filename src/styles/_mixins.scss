@@ -1,11 +1,40 @@
-@mixin laptop {
-  @media (max-width: 1280px) {
+@mixin component-bg {
+  background-color: var(--color-content-bg-default);
+  border-radius: $border-radius-main;
+  box-shadow: var(--shadow-default);
+}
+
+@mixin bg-image-cloud ($path) {
+  background-image: url($path);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+@mixin component-no-bg {
+  background: transparent;
+  border-radius: none;
+  box-shadow: none;
+}
+
+@mixin current-day-two-col {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "temp weatherIcon"
+    "date date"
+  ;
+  align-items: center;
+}
+
+@mixin tablet-large {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     @content;
   }
 }

@@ -1,0 +1,113 @@
+@import '../../../../styles/vars';
+@import '../../../../styles/mixins';
+
+.currentDay {
+  padding: 20px;
+
+  @include component-bg;
+
+  @include tablet-large {
+    @include component-no-bg;
+  }
+
+  @include mobile {
+    padding: 10px 0 0 0;
+  }
+
+  &__topBlock {
+    @include current-day-two-col;
+
+    @include tablet-large {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto auto;
+      grid-template-areas:
+        "weatherIcon"
+        "temp"
+        "date"
+      ;
+      justify-items: center;
+    }
+
+    @include mobile {
+      @include current-day-two-col;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__bottomBlock {
+    margin-top: 20px;
+
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+
+  &__temp {
+    grid-area: temp;
+    font-size: 96px;
+    font-weight: 600;
+    color: $color-blue;
+
+    @include tablet-large {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      justify-self: end;
+      font-size: 84px;
+      margin: 0 10px 0 0
+    }
+  }
+
+  &__wetherIcon {
+    grid-area: weatherIcon;
+    justify-self: center;
+    width: 120px;
+    height: 120px;
+
+    @include tablet-large {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      justify-self: start;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__date {
+    grid-area: date;
+    font-size: 40px;
+
+    @include tablet-large {
+      font-size: 28px;
+    }
+
+    @include mobile {
+      margin-top: 10px;
+      font-size: 36px;
+    }
+  }
+
+  &__time,
+  &__city {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    color: $color-grey;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}
