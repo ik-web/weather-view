@@ -11,6 +11,10 @@
 
   background: var(--color-footer-bg-default);
 
+  @include mobile {
+    padding-bottom: 15px;
+  } 
+
   &__title {
     margin-bottom: 5px;
     text-shadow: 0 0 5px $color-main;
