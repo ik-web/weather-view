@@ -2,12 +2,8 @@
 @import '../../styles/mixins';
 
 .header {
-  padding: 5px 0 25px;
+  padding-bottom: 25px;
   background: var(--color-header-bg-default);
-
-  @include mobile {
-    padding-top: 0;
-  }
 
   &__inner {
     display: grid;
@@ -27,7 +23,7 @@
 
   &__logo {
     grid-area: logo;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   &__title {
@@ -58,7 +54,12 @@
 
     &:hover svg {
       animation: animation-theme-btn 5s infinite linear;
+      
+      @include tablet {
+        animation: none;
+      }
     }
+
   }
 }
 
