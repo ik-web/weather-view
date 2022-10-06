@@ -1,5 +1,6 @@
 $font-family-main: 'Open Sans', sans-serif;
 $font-family-decoration: 'Shrikhand', cursive;
+$font-family-signature: 'Pacifico', cursive;
 $font-size-main: 14px;
 
 $color-main: #1a3558;
@@ -14,6 +15,11 @@ $color-light-blue: #d1e6ff;
 
 $color-header-bg-light: linear-gradient(#7bc4ff, $color-light);
 $color-header-bg-dark: linear-gradient(#7bc4ff, $color-dark);
+
+$color-footer-bg-light: linear-gradient($color-light, #1d331d);
+$color-footer-bg-dark: linear-gradient($color-dark, #1d331d);
+
+$transition-duration-main: 0.1s;
 
 :root {
   // color -------------------------------------------------------
@@ -30,4 +36,14 @@ $color-header-bg-dark: linear-gradient(#7bc4ff, $color-dark);
   --color-header-bg-light: #{$color-header-bg-light};
   --color-header-bg-dark: #{$color-header-bg-dark};
   --color-header-bg-default: var(--color-header-bg-light);
+  
+  // Footer background -------------------------------------------
+  --color-footer-bg-light: #{$color-footer-bg-light};
+  --color-footer-bg-dark: #{$color-footer-bg-dark};
+  --color-footer-bg-default: var(--color-footer-bg-light);
+
+  // Footer link hover color -------------------------------------
+  --footer-link-hover-light: #{$color-black};
+  --footer-link-hover-dark: #{$color-blue};
+  --footer-link-hover-default: var(--footer-link-hover-light);
 }

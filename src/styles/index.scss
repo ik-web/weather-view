@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Shrikhand&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
 @import './vars';
 @import './mixins';
 
@@ -26,8 +27,8 @@ img {
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -37,4 +38,12 @@ img {
   max-width: 1400px;
   width: 100%;
   padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
