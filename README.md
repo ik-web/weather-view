@@ -15,9 +15,9 @@
   <img src="https://img.shields.io/badge/-redux-blueviolet" alt="redux"> <br>
 </p>
 
-<!-- <p align="center">
+<p align="center">
   <a href="https://ik-web.github.io/weather-view">⮚⮚ DEMO LINK ⮘⮘</a> 
-</p> -->
+</p>
 
 ## Description:
 ```
@@ -29,6 +29,7 @@ A project to practice the skills of working with React, Redux and Typescript tec
 
 **The npm commands used to install the required node modules:**
 - `npx create-react-app my-app --template typescript`
+- `npm i gh-pages -D`
 
 ## Developers
 
