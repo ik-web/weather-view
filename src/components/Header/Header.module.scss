@@ -1,0 +1,81 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.header {
+  padding: 5px 0 25px;
+  background: var(--color-header-bg-default);
+
+  @include mobile {
+    padding-top: 0;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+    align-items: center;
+    grid-template-areas:
+      "logo title . theme select"
+    ;
+
+    @include tablet {
+      grid-template-columns: auto  1fr auto;
+      grid-template-areas:
+        "logo title theme"
+      ;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    grid-area: title;
+
+    margin: 0;
+    padding-left: 10px;
+
+    font-family: $font-family-decoration;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-default);
+
+    @include tablet {
+      padding: 0;
+      text-align: center;
+    }
+    
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  &__themeToggler {
+    grid-area: theme;
+    display: flex;
+    cursor: pointer;
+
+    &:hover svg {
+      animation: animation-theme-btn 5s infinite linear;
+    }
+  }
+}
+
+@keyframes animation-theme-btn {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__select {
+  grid-area: select;
+
+  @include tablet {
+    display: none;
+  }
+}

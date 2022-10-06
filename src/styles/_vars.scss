@@ -1,0 +1,33 @@
+$font-family-main: 'Open Sans', sans-serif;
+$font-family-decoration: 'Shrikhand', cursive;
+$font-size-main: 14px;
+
+$color-main: #1a3558;
+$color-light: #fff;
+$color-black: #111;
+$color-dark: #102036;
+$color-grey: #919191;
+$color-light-grey: #e6e6e6;
+$color-dark-blue: #375885;
+$color-blue: #5da0ff;
+$color-light-blue: #d1e6ff;
+
+$color-header-bg-light: linear-gradient(#7bc4ff, $color-light);
+$color-header-bg-dark: linear-gradient(#7bc4ff, $color-dark);
+
+:root {
+  // color -------------------------------------------------------
+  --color-light: #{$color-main};
+  --color-dark: #{$color-light-grey};
+  --color-default: var(--color-light);
+
+  // Component background ----------------------------------------
+  --color-component-bg-light: #{$color-light};
+  --color-component-bg-dark: #{$color-dark};
+  --color-component-bg-default: var(--color-component-bg-light);
+
+  // Header background -------------------------------------------
+  --color-header-bg-light: #{$color-header-bg-light};
+  --color-header-bg-dark: #{$color-header-bg-dark};
+  --color-header-bg-default: var(--color-header-bg-light);
+}

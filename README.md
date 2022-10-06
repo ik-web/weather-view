@@ -1,5 +1,5 @@
 <!-- <p align="center">
-  <img src="readme-title.png" width="400" alt="Title">
+  <img src="readme-title.png" width="350" alt="Title">
 </p> -->
 
 <h1 align="center">
@@ -27,10 +27,14 @@ A project to practice the skills of working with React, Redux and Typescript tec
 
 ## Documentation
 
+Used libraries:
+- [React Select](https://react-select.com/home)
+
 **The npm commands used to install the required node modules:**
 - `npx create-react-app my-app --template typescript`
 - `npm i gh-pages -D`
 - `npm i sass`
+- `npm i react-select @types/react-select`
 
 ## Developers
 
