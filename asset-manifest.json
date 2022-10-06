@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/weather-view/static/css/main.d1ac91e7.css",
-    "main.js": "/weather-view/static/js/main.6653eca2.js",
+    "main.css": "/weather-view/static/css/main.95e9e759.css",
+    "main.js": "/weather-view/static/js/main.7866a1f2.js",
+    "static/media/cloud.png": "/weather-view/static/media/cloud.93ea380a4d88cb8d7cf1.png",
+    "static/media/snow.svg": "/weather-view/static/media/snow.cfff800a5ff2acbc2b5220c2d758710a.svg",
+    "static/media/temp.svg": "/weather-view/static/media/temp.fb15225472c5cb1dfa5cb6a680a6fe9f.svg",
+    "static/media/sun.svg": "/weather-view/static/media/sun.d81ae004a445b8a03d015ffa7ccdfd42.svg",
+    "static/media/cloud.svg": "/weather-view/static/media/cloud.b5c1a1e4314c4f2d652328aa7693dc3c.svg",
     "static/media/header-logo.svg": "/weather-view/static/media/header-logo.b5c1a1e4314c4f2d652328aa7693dc3c.svg",
+    "static/media/press.svg": "/weather-view/static/media/press.5785ff73f643b5e20397373d8b2017eb.svg",
+    "static/media/rain.svg": "/weather-view/static/media/rain.4d3b072149acd60e571de5469b056055.svg",
+    "static/media/wind.svg": "/weather-view/static/media/wind.e6162ee02aa00b59392b74b7f95b4bd2.svg",
+    "static/media/fog.svg": "/weather-view/static/media/fog.1aa5f4ea0205e688faea0f63ee861f91.svg",
+    "static/media/precipitation.svg": "/weather-view/static/media/precipitation.2ebac3b8df6bb2cfbd27dd2e9b0d02ab.svg",
+    "static/media/storm.svg": "/weather-view/static/media/storm.7d65dd8bf526a6f5a110bfccffa202f6.svg",
     "index.html": "/weather-view/index.html",
-    "main.d1ac91e7.css.map": "/weather-view/static/css/main.d1ac91e7.css.map",
-    "main.6653eca2.js.map": "/weather-view/static/js/main.6653eca2.js.map"
+    "main.95e9e759.css.map": "/weather-view/static/css/main.95e9e759.css.map",
+    "main.7866a1f2.js.map": "/weather-view/static/js/main.7866a1f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1ac91e7.css",
-    "static/js/main.6653eca2.js"
+    "static/css/main.95e9e759.css",
+    "static/js/main.7866a1f2.js"
   ]
 }
