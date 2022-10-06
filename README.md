@@ -1,10 +1,6 @@
-<!-- <p align="center">
+<p align="center">
   <img src="readme-title.png" width="350" alt="Title">
-</p> -->
-
-<h1 align="center">
-  WeatherView
-</h1>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/-html-red" alt="html">
