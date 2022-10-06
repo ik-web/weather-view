@@ -30,6 +30,7 @@ A project to practice the skills of working with React, Redux and Typescript tec
 **The npm commands used to install the required node modules:**
 - `npx create-react-app my-app --template typescript`
 - `npm i gh-pages -D`
+- `npm i sass`
 
 ## Developers
 
