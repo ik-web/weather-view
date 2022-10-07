@@ -36,10 +36,6 @@
 
   &__bottomBlock {
     margin-top: 20px;
-
-    @include mobile {
-      margin-top: 10px;
-    }
   }
 
   &__temp {

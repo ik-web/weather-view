@@ -4,9 +4,13 @@
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  align-items: center;
+  grid-template-rows: auto auto;
+  align-items: start;
   height: 100%;
+
+  @include tablet {
+    padding-top: 50px;
+  }
 
   &__topBlock {
     display: grid;

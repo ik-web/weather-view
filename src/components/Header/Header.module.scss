@@ -2,10 +2,11 @@
 @import '../../styles/mixins';
 
 .header {
-  padding-bottom: 25px;
+  padding: 10px 0 25px;
   background: var(--color-header-bg-default);
 
   &__inner {
+    position: relative;
     display: grid;
     grid-template-columns: auto auto 1fr auto auto;
     align-items: center;
@@ -13,7 +14,7 @@
       "logo title . theme select"
     ;
 
-    @include tablet-large {
+    @include tablet {
       grid-template-columns: auto  1fr auto;
       grid-template-areas:
         "logo title theme"
@@ -37,13 +38,13 @@
     font-weight: 400;
     color: var(--color-default);
 
-    @include tablet-large {
+    @include tablet {
       padding: 0;
       text-align: center;
     }
     
     @include mobile {
-      font-size: 24px;
+      font-size: 26px;
     }
   }
 
@@ -76,7 +77,9 @@
 .header__select {
   grid-area: select;
 
-  @include tablet-large {
-    display: none;
+  @include tablet {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
   }
 }
