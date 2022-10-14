@@ -1,0 +1,60 @@
+@import '../../../../../../../../styles/vars';
+@import '../../../../../../../../styles/mixins';
+
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 15px 0;
+  width: 150px;
+
+  background: var(--color-day-bg-default);
+  border-radius: $border-radius-main;
+  box-shadow: var(--shadow-default);
+  cursor: pointer;
+
+  transition: background $transition-duration-main linear;
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+
+    color: var(--color-default);
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-grey;
+  }
+
+  &__icon {
+    width: 50px;
+  }
+
+  &__tempDay {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-default);
+  }
+
+  &__tempNight {
+    font-size: 14px;
+    color: $color-grey;
+  }
+
+  &__name,
+  &__icon,
+  &__date,
+  &__tempDay,
+  &__tempNight {
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    font-size: 14px;
+    color: $color-grey;
+  }
+}

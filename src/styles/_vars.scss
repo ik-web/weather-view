@@ -55,17 +55,17 @@ $transition-duration-main: 0.1s;
   --shadow-default: var(--shadow-light);
 
   // Other days filter's button background -----------------------
-  --color-btn-bg-light: #{$color-blue};
+  --color-btn-bg-light: #{$color-light-blue};
   --color-btn-bg-dark: #{$color-dark};
   --color-btn-bg-default: var(--color-btn-bg-light);
 
   // Other days filter's button-active background ----------------
-  --color-btn-bg-active-light: #{$color-light};
+  --color-btn-bg-active-light: #{$color-blue};
   --color-btn-bg-active-dark: #{$color-blue};
   --color-btn-bg-active-default: var(--color-btn-bg-active-light);
 
   // Other days filter's button-active text ----------------------
-  --color-btn-active-light: #{$color-main};
+  --color-btn-active-light: #{$color-light};
   --color-btn-active-dark: #{$color-light};
   --color-btn-active-default: var(--color-btn-active-light);
 

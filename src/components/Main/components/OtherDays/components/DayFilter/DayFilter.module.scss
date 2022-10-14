@@ -1,0 +1,61 @@
+@import '../../../../../../styles/vars';
+@import '../../../../../../styles/mixins';
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(3, 150px) 1fr;
+  grid-template-rows: 35px;
+  gap: 20px;
+
+  @include tablet {
+    grid-template-columns: 130px;
+    grid-template-rows: repeat(3, 35px) 1fr;
+    gap: 15px;
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 35px);
+  }
+
+  &__btn {
+    color: $color-main;
+  
+    background: var(--color-btn-bg-default);
+    box-shadow: var(--shadow-default);
+    border-radius: $border-radius-main;
+    border: none;
+    cursor: pointer;
+    transition: all $transition-duration-main linear;
+
+    &:last-child {
+      justify-self: end;
+      width: 150px;
+      height: 35px;
+
+      @include tablet {
+        align-self: end;
+        width: 130px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      color: var(--color-btn-active-default);
+      background: var(--color-btn-bg-active-default);
+    }
+
+    &_cancel {
+      margin-right: 0;
+    }
+
+    &_active {
+      color: var(--color-btn-active-default);
+      background: var(--color-btn-bg-active-default);
+      box-shadow: none;
+    }
+  }
+}

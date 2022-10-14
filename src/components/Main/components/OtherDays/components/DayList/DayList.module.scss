@@ -1,0 +1,30 @@
+@import '../../../../../../styles/vars';
+@import '../../../../../../styles/mixins';
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 20px;
+  padding: 20px 5px;
+
+  background: var(--color-content-bg-default);
+  border-radius: 0 0 12px 12px;
+  border-left: 15px solid var(--color-content-bg-default);
+  border-right: 15px solid var(--color-content-bg-default);
+  box-shadow: var(--shadow-default);
+
+  
+  @include laptop {
+    overflow-x: scroll;
+  }
+
+  @include tablet {
+    border-radius: 12px;
+  }
+
+  @include mobile {
+
+  }
+}
