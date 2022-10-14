@@ -1,12 +1,7 @@
 import React from 'react';
+import { InfoItem } from '../../../../react-app-env';
 import CurrentDayInfoItem from './components/CurrentDayInfoItem';
 import styles from './CurrentDayInfo.module.scss';
-
-export interface InfoItem {
-    icon: string,
-    title: string,
-    value: string
-}
 
 const CurrentDayInfo: React.FC = () => {
   const items: InfoItem[] = [

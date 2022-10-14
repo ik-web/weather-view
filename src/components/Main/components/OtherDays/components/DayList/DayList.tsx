@@ -2,17 +2,13 @@ import React from 'react';
 import styles from './DayList.module.scss';
 import Day from './components/Day/Day';
 import { days } from '../../../../../../store/store';
+import { TDay } from '../../../../../../react-app-env';
 
-export interface TDay {
-  id: number,
-  name: string,
-  dayDate: string,
-  tempDay: string,
-  tempNight: string,
-  info: string
+interface Props {
+  setIsPopup: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const DayList: React.FC = () => {
+const DayList: React.FC<Props> = ({ setIsPopup }) => {
   const daysOfList: TDay[] = days;
 
   return (
@@ -21,6 +17,7 @@ const DayList: React.FC = () => {
         <Day
           key={day.id}
           day={day}
+          setIsPopup={setIsPopup}
         />
       ))}
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { InfoIcons } from '../../../../../img/icons/info/InfoIcons';
-import { InfoItem } from '../CurrentDayInfo';
+import { InfoItem } from '../../../../../react-app-env';
 import styles from './CurrentDayInfoItem.module.scss';
 
 interface Props {

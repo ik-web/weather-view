@@ -1,10 +1,6 @@
 import React from 'react';
+import { TButton } from '../../../../../../react-app-env';
 import styles from './DayFilter.module.scss';
-
-interface TButton {
-  id: number,
-  name: string
-}
 
 const DayFilter: React.FC = () => {
   const buttons: TButton[] = [

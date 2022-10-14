@@ -21,6 +21,10 @@ body {
   background: var(--color-component-bg-default);
 }
 
+.blockPageScroll {
+  overflow: hidden;
+}
+
 img {
   display: block;
   width: 100%;
@@ -31,6 +35,10 @@ img {
   grid-template-rows: auto 1fr auto;
   min-width: 320px;
   min-height: 100vh;
+
+  &_scrollBlock {
+    overflow: hidden;
+  }
 }
 
 .container {

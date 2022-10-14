@@ -19,6 +19,8 @@ $color-header-bg-dark: linear-gradient(#7bc4ff, $color-dark);
 $color-footer-bg-light: linear-gradient($color-light, #1d331d);
 $color-footer-bg-dark: linear-gradient($color-dark, #1d331d);
 
+$color-popup-overlay: rgba(0, 0, 0, 0.8);
+
 $transition-duration-main: 0.1s;
 
 $border-radius-main: 12px;
@@ -73,6 +75,26 @@ $transition-duration-main: 0.1s;
   --color-day-bg-light: #{$color-light};
   --color-day-bg-dark: #{$color-dark};
   --color-day-bg-default: var(--color-card-bg-light);
+  
+  // Popup btn background -----------------------------------------
+  --color-popup-btn-bg-light: #{$color-light};
+  --color-popup-btn-bg-dark: #{$color-dark-blue};
+  --color-popup-btn-bg-default: var(--color-popup-btn-bg-light);
+
+  // Popup btn-active cross ----------------------------------------
+  --color-popup-cross-light: #{$color-blue};
+  --color-popup-cross-dark: #{$color-main};
+  --color-popup-cross-default: var(--color-popup-cross-light);
+
+  // Popup btn-active cross ----------------------------------------
+  --color-popup-cross-active-light: #{$color-light};
+  --color-popup-cross-active-dark: #{$color-main};
+  --color-popup-cross-active-default: var(--color-popup-cross-active-light);
+
+  // Popup btn-active background ----------------------------------
+  --color-popup-btn-active-bg-light: #{$color-blue};
+  --color-popup-btn-active-bg-dark: #{$color-blue};
+  --color-popup-btn-active-bg-default: var(--color-popup-btn-active-bg-light);
   
   // Footer background -------------------------------------------
   --color-footer-bg-light: #{$color-footer-bg-light};

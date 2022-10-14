@@ -1,0 +1,167 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  padding: 40px;
+  width: max-content;
+
+  background: var(--color-content-bg-default);
+  border: 1px solid $color-blue;
+  border-radius: $border-radius-main;
+  box-shadow: var(--shadow-default);
+
+  @include tablet {
+    padding: 20px 10px; 
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+  
+    background: $color-popup-overlay;
+  }
+  
+  &__btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    background: var(--color-popup-bg-default);
+    border: 2px solid $color-blue;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: all $transition-duration-main linear;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 70%;
+      height: 2px;
+
+      background: var(--color-popup-cross-default);
+
+      transition: all $transition-duration-main linear;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background: var(--color-popup-btn-active-bg-default);
+
+      &:before {
+        background: var(--color-popup-cross-active-default);
+      }
+
+      &:after {
+        background: var(--color-popup-cross-active-default);
+      }
+    }
+
+    @include tablet {
+      top: 10px;
+      right: 10px;
+    }
+
+  }
+  
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      width: 280px;
+    }
+  }
+  
+  &__leftBlock {
+    margin-right: 30px;
+    width: 150px;
+
+    @include tablet {
+      margin-right: 10px;
+      width: 140px;
+
+      text-align: center;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: 0;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  .popup__rightBlock {
+
+    @include mobile {
+      padding-top: 10px;
+      border-top: 1px dashed $color-grey;
+    }
+  }
+  
+  &__temp {
+    margin-bottom: 10px;
+
+    font-size: 48px;
+    font-weight: 600;
+    color: $color-blue;
+  }
+  
+  &__day {
+    margin: 0 0 10px;
+    font-size: 28px;
+  }
+  
+  &__img {
+    margin-bottom: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    @include tablet {
+      margin: 0 auto 10px;
+    }
+  }
+  
+  &__city,
+  &__time {
+    margin-bottom: 10px;
+    color: $color-grey;
+  }
+}
