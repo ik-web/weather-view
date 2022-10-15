@@ -1,5 +1,5 @@
 import Select from 'react-select';
-import { ThemeStyle } from '../../context/ThemeContext';
+import { ThemeStyle } from '../../context/AppContext';
 import { useTheme } from '../../hooks/useTheme';
 import { HeaderIcons } from '../../img/icons/header/HeaderIcons';
 import styles from './Header.module.scss';

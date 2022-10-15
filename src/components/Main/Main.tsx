@@ -4,11 +4,7 @@ import CurrentDayInfo from './components/CurrentDayInfo/CurrentDayInfo';
 import OtherDays from './components/OtherDays/OtherDays';
 import styles from './Main.module.scss';
 
-interface Props {
-  setIsPopup: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-const Main: React.FC<Props> = ({ setIsPopup }) => {
+const Main: React.FC = () => {
   return (
     <div className='container'>
       <main className={styles.main}>
@@ -18,7 +14,7 @@ const Main: React.FC<Props> = ({ setIsPopup }) => {
         </div>
 
         <div className={styles.main__bottomBlock}>
-          <OtherDays  setIsPopup={setIsPopup} />
+          <OtherDays />
         </div>
       </main>
     </div>

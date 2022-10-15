@@ -1,4 +1,4 @@
-import { ThemeStyle } from "../context/ThemeContext";
+import { ThemeStyle } from "../context/AppContext";
 
 export const changeCssVars = (theme: ThemeStyle) => {
   const root = document.querySelector(':root') as HTMLElement;

@@ -3,15 +3,11 @@ import DayFilter from './components/DayFilter/DayFilter';
 import DayList from './components/DayList/DayList';
 import styles from './OtherDays.module.scss';
 
-interface Props {
-  setIsPopup: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-const OtherDays: React.FC<Props> = ({ setIsPopup }) => {
+const OtherDays: React.FC = () => {
   return (
     <div className={styles.otherDays}>
       <DayFilter />
-      <DayList  setIsPopup={setIsPopup} />
+      <DayList />
     </div>
   );
 };

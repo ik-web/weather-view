@@ -4,13 +4,15 @@ import { InfoItem } from '../../react-app-env';
 import { WeatherIcons } from '../../img/icons/weather/WeatherIcons';
 import { items } from '../../store/store';
 import CurrentDayInfoItem from '../Main/components/CurrentDayInfo/components/CurrentDayInfoItem';
-import { scrollBlock } from '../../functions/block-page-scroll';
+import { usePopup } from '../../hooks/usePopup';
 
-interface Props {
-  setIsPopup: React.Dispatch<React.SetStateAction<boolean>>
-}
+const Popup: React.FC = () => {
+  const { setIsPopup } = usePopup();
 
-const Popup: React.FC<Props> = ({ setIsPopup }) => {
+  const toggleState = () => {
+    setIsPopup();
+  }
+  
   const popapItems: InfoItem[] = items;
 
   return (
@@ -18,10 +20,7 @@ const Popup: React.FC<Props> = ({ setIsPopup }) => {
       <div className={styles.popup}>
         <button
           className={styles.popup__btn}
-          onClick={() => {
-            setIsPopup(false);
-            scrollBlock();
-          }}
+          onClick={toggleState}
         ></button>
 
         <div className={styles.popup__card}>

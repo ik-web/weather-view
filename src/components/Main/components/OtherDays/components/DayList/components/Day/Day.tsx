@@ -1,23 +1,24 @@
 import React from 'react';
-import { scrollBlock } from '../../../../../../../../functions/block-page-scroll';
+import { usePopup } from '../../../../../../../../hooks/usePopup';
 import { WeatherIcons } from '../../../../../../../../img/icons/weather/WeatherIcons';
 import { TDay } from '../../../../../../../../react-app-env';
 import styles from './Day.module.scss';
 
 interface Props {
   day: TDay,
-  setIsPopup: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Day: React.FC<Props> = ({ day, setIsPopup }) => {
+const Day: React.FC<Props> = ({ day }) => {
+  const { setIsPopup } = usePopup();
+
+  const toggleState = () => {
+    setIsPopup();
+  }
 
   return (
     <section
       className={styles.day}
-      onClick={() => {
-        setIsPopup(true);
-        scrollBlock();
-      }}
+      onClick={toggleState}
     >
       <h2 className={styles.day__name}>
         {day.name}

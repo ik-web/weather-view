@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
-import { ThemeProvider } from './provider/ThemeProvider';
+import { AppProvider } from './provider/AppProvider';
 import App from './App';
 import './styles/index.scss';
 
@@ -11,9 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <ThemeProvider>
+      <AppProvider>
         <App />
-      </ThemeProvider>
+      </AppProvider>
     </HashRouter>
   </React.StrictMode>
 );
