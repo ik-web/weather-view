@@ -30,20 +30,20 @@ const Popup: React.FC<Props> = ({ setIsPopup }) => {
               9°
             </div>
 
-            <h1 className={styles.popup__day}>
-              Today
-            </h1>
-
             <div className={styles.popup__img}>
               <WeatherIcons id='Cloudy' />
             </div>
+            
+            <h1 className={styles.popup__day}>
+              Today
+            </h1>
 
             <div className={styles.popup__time}>
               Time: <span>22:17</span>
             </div>
 
             <div className={styles.popup__city}>
-              City: <span>Ivano-frankivsk</span>
+              City: <span>Vyshneve</span>
             </div>
           </div>
 

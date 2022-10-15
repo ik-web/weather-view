@@ -20,7 +20,7 @@
 
   &__btn {
     font-size: $font-size-main;
-    color: $color-main;
+    color: var(--color-btn-default);
   
     background: var(--color-btn-bg-default);
     box-shadow: var(--shadow-default);
@@ -54,9 +54,9 @@
     }
 
     &_active {
-      color: var(--color-btn-active-default);
-      background: var(--color-btn-bg-active-default);
-      box-shadow: none;
+      // color: var(--color-btn-active-default);
+      // background: var(--color-btn-bg-active-default);
+      // box-shadow: none;
     }
   }
 }

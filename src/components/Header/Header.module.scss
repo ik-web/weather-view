@@ -36,7 +36,7 @@
     font-family: $font-family-decoration;
     font-size: 40px;
     font-weight: 400;
-    color: var(--color-default);
+    color: var(--color-main-title-default);
 
     @include tablet {
       padding: 0;

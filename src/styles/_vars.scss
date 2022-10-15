@@ -46,6 +46,11 @@ $transition-duration-main: 0.1s;
   --color-header-bg-dark: #{$color-header-bg-dark};
   --color-header-bg-default: var(--color-header-bg-light);
 
+  // Main title background -------------------------------------------
+  --color-main-title-light: #{$color-main};
+  --color-main-title-dark: #{$color-dark};
+  --color-main-title-default: var(--color-main-title-light);
+
   // Content background ------------------------------------------
   --color-content-bg-light: #{$color-light-blue};
   --color-content-bg-dark: #{$color-main};
@@ -58,7 +63,7 @@ $transition-duration-main: 0.1s;
 
   // Other days filter's button background -----------------------
   --color-btn-bg-light: #{$color-light-blue};
-  --color-btn-bg-dark: #{$color-dark};
+  --color-btn-bg-dark: #{$color-main};
   --color-btn-bg-default: var(--color-btn-bg-light);
 
   // Other days filter's button-active background ----------------
@@ -66,9 +71,14 @@ $transition-duration-main: 0.1s;
   --color-btn-bg-active-dark: #{$color-blue};
   --color-btn-bg-active-default: var(--color-btn-bg-active-light);
 
+  // Other days filter's button text ----------------------
+  --color-btn-light: #{$color-main};
+  --color-btn-dark: #{$color-light};
+  --color-btn-default: var(--color-btn-light);
+
   // Other days filter's button-active text ----------------------
   --color-btn-active-light: #{$color-light};
-  --color-btn-active-dark: #{$color-light};
+  --color-btn-active-dark: #{$color-dark};
   --color-btn-active-default: var(--color-btn-active-light);
 
   // Day card background -----------------------------------------
@@ -81,7 +91,7 @@ $transition-duration-main: 0.1s;
   --color-popup-btn-bg-dark: #{$color-dark-blue};
   --color-popup-btn-bg-default: var(--color-popup-btn-bg-light);
 
-  // Popup btn-active cross ----------------------------------------
+  // Popup btn cross ----------------------------------------
   --color-popup-cross-light: #{$color-blue};
   --color-popup-cross-dark: #{$color-main};
   --color-popup-cross-default: var(--color-popup-cross-light);

@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import styles from './Header.module.scss';
 import Select from 'react-select';
+import { ThemeStyle } from '../../context/ThemeContext';
+import { useTheme } from '../../hooks/useTheme';
 import { HeaderIcons } from '../../img/icons/header/HeaderIcons';
+import styles from './Header.module.scss';
 
-const Header: React.FC = () => {
-  const [ theme, setTheme ] = useState('light');
+const Header = () => {
+  const {theme, changeTheme} = useTheme();
   
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
+    const newTheme = theme === ThemeStyle.LIGHT ? ThemeStyle.DARK : ThemeStyle.LIGHT;
+    changeTheme(newTheme);
   }
 
   const options = [
@@ -22,26 +23,26 @@ const Header: React.FC = () => {
       ...styles,
       marginLeft: '30px',
       width: '200px',
-      backgroundColor: theme === 'dark' ? '#102036' : '#fff',
+      backgroundColor: theme === ThemeStyle.DARK ? '#102036' : '#fff',
       border: '1px solid #919191',
       borderRadius: '10px',
     }),
     placeholder: (styles: any) => ({
       ...styles,
-      color:  theme === 'dark' ? '#d8d8d8' : '#d8d8d8',
+      color:  theme === ThemeStyle.DARK ? '#d8d8d8' : '#d8d8d8',
     }),
     singleValue: (styles: any) => ({
       ...styles,
-      color: theme === 'dark' ? '#d8d8d8' : '#375885',
+      color: theme === ThemeStyle.DARK ? '#d8d8d8' : '#375885',
     }),
     menu: (styles: any) => ({
       ...styles,
-      color: theme === 'dark' ? '#d8d8d8' : '#375885',
-      backgroundColor: theme === 'dark' ? '#102036' : '#5da0ff', 
+      color: theme === ThemeStyle.DARK ? '#d8d8d8' : '#375885',
+      backgroundColor: theme === ThemeStyle.DARK ? '#102036' : '#5da0ff', 
     }),
     option: (styles: any) => ({
       ...styles,
-      backgroundColor: theme === 'dark' ? '#102036' : '#5da0ff', 
+      backgroundColor: theme === ThemeStyle.DARK ? '#102036' : '#5da0ff', 
     }),
   }
 

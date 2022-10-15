@@ -116,10 +116,10 @@
     }
 
     @include mobile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
 
       margin-right: 0;
       padding-bottom: 20px;
@@ -137,7 +137,6 @@
   
   &__temp {
     margin-bottom: 10px;
-
     font-size: 48px;
     font-weight: 600;
     color: $color-blue;
