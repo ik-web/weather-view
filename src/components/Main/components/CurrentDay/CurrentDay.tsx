@@ -5,12 +5,12 @@ import styles from './CurrentDay.module.scss';
 const CurrentDay: React.FC = () => {
   return (
     <section className={styles.currentDay}>
-      <div className={styles.currentDay__topBlock}>
+      <div className={styles.currentDay__info}>
         <div className={styles.currentDay__temp}>
           9°
         </div>
 
-        <h1 className={styles.currentDay__date}>
+        <h1 className={styles.currentDay__dayName}>
           Today
         </h1>
 
@@ -19,7 +19,7 @@ const CurrentDay: React.FC = () => {
         </div>
       </div>
 
-      <div className={styles.currentDay__bottomBlock}>
+      <div className={styles.currentDay__moreInfo}>
         <div className={styles.currentDay__time}>
           Time: <span>22:17</span>
         </div>

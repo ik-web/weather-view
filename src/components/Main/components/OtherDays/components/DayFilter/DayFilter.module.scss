@@ -26,16 +26,19 @@
     box-shadow: var(--shadow-default);
     border-radius: $border-radius-main;
     border: none;
+
     cursor: pointer;
     transition: all $transition-duration-main linear;
 
     &:last-child {
       justify-self: end;
+
       width: 150px;
       height: 35px;
 
       @include tablet {
         align-self: end;
+
         width: 130px;
       }
 
@@ -46,6 +49,7 @@
 
     &:hover {
       color: var(--color-btn-active-default);
+      
       background: var(--color-btn-bg-active-default);
     }
 

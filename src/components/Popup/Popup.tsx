@@ -25,16 +25,18 @@ const Popup: React.FC<Props> = ({ setIsPopup }) => {
         ></button>
 
         <div className={styles.popup__card}>
-          <div className={styles.popup__leftBlock}>
-            <div className={styles.popup__temp}>
-              9°
+          <div className={styles.popup__dayInfo}>
+            <div className={styles.popup__dayMainWeather}>
+              <div className={styles.popup__temp}>
+                9°
+              </div>
+
+              <div className={styles.popup__img}>
+                <WeatherIcons id='Cloudy' />
+              </div>
             </div>
 
-            <div className={styles.popup__img}>
-              <WeatherIcons id='Cloudy' />
-            </div>
-            
-            <h1 className={styles.popup__day}>
+            <h1 className={styles.popup__dayName}>
               Today
             </h1>
 
@@ -47,7 +49,7 @@ const Popup: React.FC<Props> = ({ setIsPopup }) => {
             </div>
           </div>
 
-          <div className={styles.popup__rightBlock}>
+          <div className={styles.popup__dayMoreInfo}>
             <div>
               {popapItems.map(item => (
                 <CurrentDayInfoItem item={item} key={item.title} />

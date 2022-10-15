@@ -46,7 +46,7 @@ $transition-duration-main: 0.1s;
   --color-header-bg-dark: #{$color-header-bg-dark};
   --color-header-bg-default: var(--color-header-bg-light);
 
-  // Main title background -------------------------------------------
+  // Main title background ---------------------------------------
   --color-main-title-light: #{$color-main};
   --color-main-title-dark: #{$color-dark};
   --color-main-title-default: var(--color-main-title-light);
@@ -71,7 +71,7 @@ $transition-duration-main: 0.1s;
   --color-btn-bg-active-dark: #{$color-blue};
   --color-btn-bg-active-default: var(--color-btn-bg-active-light);
 
-  // Other days filter's button text ----------------------
+  // Other days filter's button text -----------------------------
   --color-btn-light: #{$color-main};
   --color-btn-dark: #{$color-light};
   --color-btn-default: var(--color-btn-light);
@@ -86,22 +86,22 @@ $transition-duration-main: 0.1s;
   --color-day-bg-dark: #{$color-dark};
   --color-day-bg-default: var(--color-card-bg-light);
   
-  // Popup btn background -----------------------------------------
+  // Popup btn background ----------------------------------------
   --color-popup-btn-bg-light: #{$color-light};
   --color-popup-btn-bg-dark: #{$color-dark-blue};
   --color-popup-btn-bg-default: var(--color-popup-btn-bg-light);
 
-  // Popup btn cross ----------------------------------------
+  // Popup btn cross ---------------------------------------------
   --color-popup-cross-light: #{$color-blue};
   --color-popup-cross-dark: #{$color-main};
   --color-popup-cross-default: var(--color-popup-cross-light);
 
-  // Popup btn-active cross ----------------------------------------
+  // Popup btn-active cross --------------------------------------
   --color-popup-cross-active-light: #{$color-light};
   --color-popup-cross-active-dark: #{$color-main};
   --color-popup-cross-active-default: var(--color-popup-cross-active-light);
 
-  // Popup btn-active background ----------------------------------
+  // Popup btn-active background ---------------------------------
   --color-popup-btn-active-bg-light: #{$color-blue};
   --color-popup-btn-active-bg-dark: #{$color-blue};
   --color-popup-btn-active-bg-default: var(--color-popup-btn-active-bg-light);

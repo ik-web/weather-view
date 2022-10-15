@@ -7,6 +7,7 @@
 
   &__inner {
     position: relative;
+
     display: grid;
     grid-template-columns: auto auto 1fr auto auto;
     align-items: center;
@@ -24,6 +25,7 @@
 
   &__logo {
     grid-area: logo;
+
     padding-bottom: 15px;
   }
 
@@ -40,6 +42,7 @@
 
     @include tablet {
       padding: 0;
+
       text-align: center;
     }
     
@@ -50,7 +53,9 @@
 
   &__themeToggler {
     grid-area: theme;
+
     display: flex;
+    
     cursor: pointer;
 
     &:hover svg {

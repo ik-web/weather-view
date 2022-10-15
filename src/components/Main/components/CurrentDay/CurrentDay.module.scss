@@ -14,7 +14,7 @@
     padding: 10px 0 0 0;
   }
 
-  &__topBlock {
+  &__info {
     @include current-day-two-col;
 
     @include tablet-large {
@@ -30,35 +30,41 @@
 
     @include mobile {
       @include current-day-two-col;
+
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  &__bottomBlock {
+  &__moreInfo {
     margin-top: 20px;
   }
 
   &__temp {
     grid-area: temp;
+
     font-size: 96px;
     font-weight: 600;
     color: $color-blue;
 
     @include tablet-large {
-      font-size: 54px;
       margin-bottom: 10px;
+
+      font-size: 54px;
     }
 
     @include mobile {
       justify-self: end;
+
+      margin: 0 10px 0 0;
+
       font-size: 84px;
-      margin: 0 10px 0 0
     }
   }
 
   &__wetherIcon {
     grid-area: weatherIcon;
     justify-self: center;
+
     width: 120px;
     height: 120px;
 
@@ -70,14 +76,16 @@
 
     @include mobile {
       justify-self: start;
+
       width: 100px;
       height: 100px;
       margin-bottom: 0;
     }
   }
 
-  &__date {
+  &__dayName {
     grid-area: date;
+
     font-size: 40px;
 
     @include tablet-large {
@@ -86,6 +94,7 @@
 
     @include mobile {
       margin-top: 10px;
+      
       font-size: 36px;
     }
   }
@@ -94,16 +103,11 @@
   &__city {
     margin-bottom: 10px;
 
-    font-size: 20px;
+    font-size: 18px;
     color: $color-grey;
-
-    @include tablet {
-      font-size: 16px;
-    }
 
     @include mobile {
       text-align: center;
-      font-size: 20px;
     }
   }
 }

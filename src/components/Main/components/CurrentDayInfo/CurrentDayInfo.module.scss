@@ -4,12 +4,15 @@
 .currentDayInfo {
   position: relative;
 
-  // height: 300px;
-  padding: 20px;
   height: 100%;
+  padding: 20px;
 
   @include bg-image-cloud('../../../../img/cloud.png');
   @include component-bg;
+
+  @include laptop {
+    background-image: none;
+  }
 
   @include tablet-large {
     @include component-no-bg;
