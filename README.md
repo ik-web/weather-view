@@ -23,14 +23,28 @@ A project to practice the skills of working with React, Redux and Typescript tec
 
 ## Documentation
 
-Used libraries:
-- [React Select](https://react-select.com/home)
+***What is done:***
+>- Created the project HTML markup;
+>- Added project stylization (SCSS);
+>- Added the ability to change the color theme (Light and dark);
 
-**The npm commands used to install the required node modules:**
+***Technologies used:***
+>- HTML (JSX)
+>- CSS (SCSS preprocessor)
+>- Javascript (JSX)
+>- React
+>- Typescript
+
+
+***Used libraries:***
+> [React Select](https://react-select.com/home)
+
+***The npm commands used to install the required node modules:***
 - `npx create-react-app my-app --template typescript`
 - `npm i gh-pages -D`
 - `npm i sass`
 - `npm i react-select @types/react-select`
+- `npm i react-router-dom`
 
 ## Developers
 
@@ -52,4 +66,4 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-`
+```
